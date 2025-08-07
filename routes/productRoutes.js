@@ -33,7 +33,7 @@ router.get('/products', productController.getAllProducts);
 
 /**
  * @swagger
- * /api/products/:id:
+ * /api/products/{id}:
  *  get:
  *      summary: Get a product by ID
  *      tags: [Products]
@@ -143,7 +143,7 @@ router.delete('/products/:id', productController.softDeleteProduct);
 
 /**
  * @swagger
- * /api/products:
+ * /api/products/restore/{id}:
  *  put:
  *      summary: restore a soft-delete a product
  *      tags: [Products]
