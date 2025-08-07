@@ -13,7 +13,7 @@ const Product = {
         db.query(query, [id], callback);
     },
 
-    serachByKeyword: (callback) => {
+    searchByKeyword: (callback) => {
         const searchTerm = '%${keyword}%';
         const query = 'SELECT * FROM products WHERE name LIKE ? AND is_deleted = 0';
         db.query(query, [searchTerm], callback);
