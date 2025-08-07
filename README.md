@@ -1,5 +1,5 @@
 ติดตั้ง package ให้ครบ เชื่อมต่อ database ให้ได้ก็สามารถ run ตัว code นี้ได้ (มีไฟล์ .env ด้วยนะ)
-npm install express mysql2 swagger-ui-express swagger-jsdoc dotenv
+npm install express mysql2 swagger-ui-express swagger-jsdoc dotenv uuid
 docker-compose up -d 
 --เชื่อมต่อ database--
 node index.js
