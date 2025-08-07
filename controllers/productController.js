@@ -20,7 +20,7 @@ const productController = {
         },
     searchProducts: (req, res) => {
         const { keyword } = req.params; 
-          Product.serachByKeyword(keyword, (err, results) => {
+          Product.searchByKeyword(keyword, (err, results) => {
             if(err) return res.status(500).json({ error: err.message });
             res.json(results)
           });
